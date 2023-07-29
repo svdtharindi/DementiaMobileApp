@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="32dp">
+
+    <ImageView
+        android:id="@+id/Signupicon"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="32dp"
+        app:srcCompat="@drawable/baseline_person_add_alt_1_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Signupicon"
+        android:orientation="vertical"
+        android:id="@+id/Hello_text">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's get started"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hello_text"
+        android:layout_marginVertical="32dp"
+        android:orientation="vertical"
+        android:id="@+id/formLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/email_editText"
+            android:layout_height="wrap_content"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="16dp"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/password_Edittext"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+
+            android:padding="16dp"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/Confirm_password_Edittext"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+
+            android:padding="16dp"
+            android:layout_marginTop="12dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Create Account"
+            android:id="@+id/create_account_Btn"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#7DDC39"
+            android:textSize="16sp"
+            />
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="64dp"
+            android:id="@+id/progressbar"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formLayout"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/Login_text_view"
+            android:text="Login"/>
+    </LinearLayout>
+</RelativeLayout>
