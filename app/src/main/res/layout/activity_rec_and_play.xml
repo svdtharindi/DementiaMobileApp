@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    tools:context=".Rec_and_play">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_rec_and_play"
+            android:title="Task Recorder"
+            android:titleTextColor="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+
+            android:popupTheme="@style/Theme.AppCompat.DayNight"
+
+            android:background="@color/dtcreation"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabLayout_rec_and_play"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorHeight="2dp"
+            android:background="@color/my_primary"
+            app:tabGravity="fill"
+            app:tabTextColor="@color/white"
+            app:tabMode="fixed"
+            >
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_rec_and_play"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
