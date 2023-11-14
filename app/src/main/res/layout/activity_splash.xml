@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/my_primary"
+    android:background="@drawable/splash_page"
     android:orientation="vertical"
     android:layout_gravity="center"
     tools:context=".SplashActivity">
@@ -14,7 +14,7 @@
         android:layout_width="332dp"
         android:layout_height="110dp"
         android:gravity="center"
-        android:text="@string/app_name"
+
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -31,7 +31,7 @@
         android:layout_width="198dp"
         android:layout_height="54dp"
         android:gravity="center"
-        android:text="DT CREATIONS"
+
         android:textColor="@color/dtcreation"
         android:textSize="20sp"
         android:textStyle="bold"

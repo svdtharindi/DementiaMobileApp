@@ -19,7 +19,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         NotificationCompat.Builder builder =new NotificationCompat.Builder(context,"foxandroid")
                 .setSmallIcon(R.drawable.ic_launcher_background)
-                .setContentTitle("Foxandroid Alarm Manager")
+                .setContentTitle("Check your day schedule ")
                 .setContentText("Please take your medicine")
                 .setAutoCancel(true)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)

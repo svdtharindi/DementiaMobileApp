@@ -48,8 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         PopupMenu popupMenu=new PopupMenu(MainActivity.this,menuBtn);
         popupMenu.getMenu().add("Logout");
-        popupMenu.getMenu().add("voiceassistant");
-        popupMenu.getMenu().add("Dashboard");
+        popupMenu.getMenu().add("Menu");//to dash board menu
         popupMenu.show();
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     return true;
                 }
-                if(menuItem.getTitle()=="Dashboard"){
+                if(menuItem.getTitle()=="Menu"){
                     startActivity(new Intent(MainActivity.this, Dashboard.class));
                     finish();
                     return true;

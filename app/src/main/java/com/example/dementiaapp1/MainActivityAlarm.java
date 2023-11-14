@@ -39,7 +39,7 @@ public class MainActivityAlarm extends AppCompatActivity {
 
         createNotificationChannel();
 
-        binding.selectedTimeBtn.setOnClickListener(new View.OnClickListener() {
+        binding.selectAlarmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -103,11 +103,11 @@ public class MainActivityAlarm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(picker.getHour() > 12){
-                    binding.selectedTimeBtn.setText(String.format("%2d",(picker.getHour()-12))+ ":" + String.format("%02d",picker.getMinute())+ "PM");
+                    binding.selectedTimeView.setText(String.format("%2d",(picker.getHour()-12))+ ":" + String.format("%02d",picker.getMinute())+ "PM");
                 }
                 else {
 
-                    binding.selectedTimeBtn.setText(picker.getHour()+ ":" +picker.getMinute() + "AM");
+                    binding.selectedTimeView.setText(picker.getHour()+ ":" +picker.getMinute() + "AM");
                 }
                 calendar=Calendar.getInstance();
                 calendar.set(Calendar.HOUR_OF_DAY,picker.getHour());

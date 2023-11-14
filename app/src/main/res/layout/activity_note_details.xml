@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NoteDetails"
-    android:background="@color/my_primary"
+    android:background="@drawable/addnote"
     android:padding="16dp"
     android:id="@+id/titlebar">
     <RelativeLayout
